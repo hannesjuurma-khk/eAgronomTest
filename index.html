@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta author="Hannes Juurma - hannes.juurma@khk.ee">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>eAgronom | Test</title>
+    <!-- Bootstrap CDN-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Lato font -->
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <!-- Local stylesheet -->
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+<div id="content-wrapper">
+<!-- HEADER SECTION -->
+<header id="main-header" class="d-flex">
+    <div id="back-button">
+        <img src="icons/outline_arrow_back_black_18dp.png" alt="back arrow icon">
+    </div>
+    <div id="header-title">
+        <div id="header-title-text">
+            <h1>Good field</h1>
+            <h3>Fertilization</h3>
+        </div>
+        <div id="map">
+            <img src="icons/outline_map_black_18dp.png" alt="map icon">
+        </div>
+    </div>
+    <div id="remove">
+        <img src="./icons/outline_delete_forever_black_18dp.png" alt="remove icon">
+    </div>
+</header>
+
+<!-- FIELD TASKS -->
+<section id="field-tasks">
+    <div class="container-section-heading">
+        <h2>FIELD</h2>
+    </div>
+    <div class="field-info">
+        <div id="field-text">
+            <h2>Good field</h2>
+            <h3>21.97 ha <span class="circle-bullet">&#8226;</span> Wheat (Anderson) </h3>
+        </div>
+        <div id="field-icon">
+            <img src="./icons/outline_directions_black_18dp.png" alt="direction icon">
+        </div>
+    </div>
+    
+</section>
+
+<!-- TASK DETAILS -->
+<section id="task-details">
+    <div class="absolute nocontainer-heading">
+        <h2>DETAILS</h2>
+    </div>
+
+    <!-- STATUS/AREA -->
+    <div id="status-area" class="row">
+        <!-- STATUS -->
+        <div id="status" class="col fixed-task-box d-flex align-items-center flex-column justify-content-center">
+            <div class="w-100 bottommargin left relative">
+                <h3>Status</h3>
+            </div>
+            <div class="w-100 left relative">
+                <div id="to-do" class="d-flex align-items-center justify-content-left">
+                    <h2 class="text-white">TO DO</h2>
+                </div>
+            </div>
+        </div>
+        <!-- AREA -->
+        <div id="area" class="col fixed-task-box d-flex align-items-center flex-column justify-content-center">
+            <div class="w-100 bottommargin left relative">
+                    <h3>Area</h3>
+                </div>
+                <div class="w-100 left relative">
+                    <h2>21.97 ha</h2>
+                </div>
+            </div>
+    </div>
+
+    <!-- DATE/WORKERS-->
+    <div id="date-workers" class="row">
+        <!-- DATE -->
+        <div id="date" class="col fixed-task-box d-flex align-items-center flex-column justify-content-center">
+            <div class="w-100 bottommargin left relative">
+                <h3>Date
+                </h3>
+            </div>
+            <div class="w-100 left relative">
+                <h2>--</h2>
+            </div>
+        </div>
+        <!-- WORKERS -->
+        <div id="workers" class="col fixed-task-box d-flex align-items-center flex-column justify-content-center">
+            <div class="w-100 bottommargin left relative">
+                <h3>Workers
+                </h3>
+            </div>
+            <div class="w-100 left relative">
+                <h2>Meelis Neetud</h2>
+            </div>
+        </div>
+    </div>
+        
+    <!-- NOTES -->
+    <div class="row">
+        <div id="notes" class="col fixed-task-box d-flex align-items-center flex-column justify-content-center">
+            <div class="w-100 bottommargin left relative">
+                <h3>Notes
+                </h3>
+            </div>
+            <div class="w-100 left relative">
+                <h2 class="nobold">One of the stones was gone...</h2>
+            </div>
+    </div>
+    
+</section>
+   
+<!-- HISTORY/COMMENTS-->
+<section id="history">
+    <div class="absolute nocontainer-heading">
+        <h2>COMMENTS (1)</h2>
+    </div> 
+    <div class="row">
+        <div id="comment" class="col d-flex align-items-center flex-column justify-content-center">
+            <div id="comment-text" class="d-flex w-100 align-items-baseline  bottommargin left relative">
+                <h2>Meelis Neetud</h2>
+                <span class="circle-bullet paddinglr">&#8226;</span> 
+                <h3>23.05.2020</h3>
+        </div>
+        <div class="w-100 left relative">
+            <h2 class="nobold">It started to rain, had to stop.</h2>
+        </div>
+        <div id="dot-icon">
+                <img src="./icons/outline_more_vert_black_18dp.png" alt="more icon">
+        </div>
+    </div>
+    </div>
+    <div class="row">
+        <div id="input-box">
+        <div id="comment-icon">
+            <img src="icons/outline_insert_comment_black_18dp.png" alt="comment icon">
+        </div>
+        <div id="comment-input">
+            <input class="comment-input" type="text" placeholder="Add comment" data-toggle="modal" data-target="#Modal">
+        </div>
+        </div>
+</section>
+
+<!-- Check mark-->
+<footer id="check">
+        <img src="./icons/Ellipse.png" alt="check mark icon">
+</footer>
+
+<!-- Add comment modal -->
+<div class="modal" id="Modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+                <div class="absolute nocontainer-heading">
+                    <h2 class="nobold">Comment</h2>
+                </div> 
+                <div id="input-box-add">
+                    <div id="comment-input">
+                        <input id="comment-input-add" type="text" placeholder="Write comment">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-white border" data-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-green" data-dismiss="modal">Save</button>
+            </div>
+          </div>
+        </div>
+      
+</div>
+
+<!-- Bootstrap JS setup--->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
